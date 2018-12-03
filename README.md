@@ -153,3 +153,77 @@ c
 ```
 
 <br/>
+
+
+
+**조건문**
+
+> - 가장 바깥쪽에 있는 블록의 코드는 반드시 1열부터!
+> - 내부 블록은 같은 거리만큼 들여쓰기
+> - 블록의 끝은 들여 쓰기 끝나는 부분으로 간주
+> - 탭과 공백 섞어쓰지 않음
+> - 공백은 2~4칸 일반적 사용
+
+```
+score = int(input('Input Score : '))
+if 90 <= score <= 100:
+	grade = "A"
+elif 80 <= score < 90:
+	grade = "B"
+elif 70 <= score < 80:
+	grade = "C"
+elif 60 <= score < 70:
+	grade = "D"
+else:
+	grade = "F"
+print("Grade is " + grade)
+```
+
+<br/>
+
+<br/>
+
+**반복문**
+
+> - while
+> - for in
+>
+> break : 반복문 아예 빠져나옴
+>
+> continue : 해당 반복부분 생략 후 다음 전개
+
+```
+L = [1,2,3,4,5,6,7,8,9]
+print("---break---")
+for i in L:
+    if i > 5:
+        break
+    print("Item:{0}".format(i))
+```
+
+<br/>
+
+<br/>
+
+**range 함수**
+
+```
+예시)
+>>>list(range(5)) : [0,1,2,3,4]
+>>>list(range(5,10)) : [5,6,7,8,9]
+>>>list(range(10,0,-1)) : (시작값, 종료값, 증가 값) 10부터 0까지 -1씩 증가
+>>>list(range(10,20,2)) : 10부터 20까지 짝수만
+```
+
+**filter** : 조건에 해당하는 함수 이름을 넣어 걸러내주는 역할
+
+```
+def getBiggerThan20(i):
+    return i > 20
+
+K = [10, 25, 30]
+IterK = filter(getBiggerThan20, K)
+for i in IterK:
+    print("Item:{0}".format(i))
+```
+
