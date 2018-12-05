@@ -215,3 +215,75 @@ l.cry() # 다중 상속(먼저 상속받은 Tiger로)
 
 > 직접 함수 구현한 모듈을 c:\python\lib에 복사해두고 사용 가능
 
+<br/>
+
+**from절과 import절 활용**
+
+- `from <module> import <func>` : import된 어트리뷰트를 바로 사용 가능
+- `from <module> import * ` : 해당 모듈의 모든 어트리뷰트 사용 가능(__로 시작은 X)
+
+<br/>
+
+
+
+**파이썬 주요 에러 사항**
+
+> - `IndexError : list index out of range`  : 인덱스 첨자가 벗어난 상황
+> - `TypeError : unsupported operand type for /: int and str` : 형식이 잘못된 경우
+
+<br/>
+
+
+
+**try except** : 실행시간에 에러가 발생하여 코드가 중단되는 것을 방지
+
+```
+def divide(a,b):
+    return a / b
+
+try:
+    c = divide(5, 'string')
+except ZeroDivisionError:
+    print('분모가 0이면 안됩니다')
+except TypeError:
+    print('인자는 숫자여야 합니다')
+except:
+    print('또다른 이유로 발생한 에러')
+else:
+    print('Result: {0}'.format(c))
+finally:
+    print('무조건 실행')
+```
+
+<br/>
+
+
+
+내장 예외 클래스로는 한계가 있기 때문에 사용자 정의 예외 클래스를 만들어 활용한다.
+
+**raise** : 강제로 에러를 발생시키고 싶을 때 사용
+
+사용자 정의 Exception 클래스는 부모클래스로 Exception 클래스를 상속 받아야 함
+
+```
+class NegativeDivisionError(Exception):
+    def __init__(self, value):
+        self.value = value
+def positiveDivide(a,b):
+    if(b < 0):
+        raise NegativeDivisionError(b)
+    return a/ b
+
+try:
+    ret = positiveDivide(10, -3)
+    print('10/ 3 = {0}'.format(ret))
+except NegativeDivisionError as e:
+    print('Error - Second argument of PositiveDivide is', e.value)
+except ZeroDivisionError as e:
+    print('Error -', e.args[0])
+```
+
+
+
+
+
