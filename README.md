@@ -6,9 +6,12 @@
 
 <br/>
 
-
-
 - [chapter 1 - 파이썬 문법](https://github.com/kim6394/ssafy_python/tree/master/chapter%201%20-%20%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EB%AC%B8%EB%B2%95)
 
 - [chapter 2 - 파이썬 구조](https://github.com/kim6394/ssafy_python/tree/master/chapter%202%20-%20%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B5%AC%EC%A1%B0)
 
+
+
+**개인 공부**
+
+- [백준 문제풀이 코드 (파이썬)](https://github.com/kim6394/ssafy_python/tree/master/BAEKJOON)
