@@ -10,7 +10,7 @@
 
 - [chapter 2 - 파이썬 구조](https://github.com/kim6394/ssafy_python/tree/master/chapter%202%20-%20%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B5%AC%EC%A1%B0)
 
-
+<br/>
 
 **개인 공부**
 
