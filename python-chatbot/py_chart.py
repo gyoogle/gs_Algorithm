@@ -12,7 +12,10 @@ def main():
     y = np.arange(0, 100)
     print(x)
     plt.plot(x, y, "o")     #plt.plot(x, y, "k") 
-
+    
+    plt.savefig("image.svg", format="svg")
+    elice_utils.send_image("image.svg")
+    
     print("----산포도2----")
 
     line = plt.figure()
