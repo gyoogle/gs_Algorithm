@@ -1,3 +1,13 @@
+### 알고리즘 스터디(Java)
+
+------
+
+- [링크](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm(Study))
+
+<br/>
+
+
+
 ### 자바(java)
 
 ---
@@ -7,19 +17,6 @@
 
 
 <br/>
-
-### 알고리즘(Java)
-
----
-
-- [개념 정리](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm/%EA%B0%9C%EB%85%90%20%EC%A0%95%EB%A6%AC)
-- [문제 풀이](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm/%EB%AC%B8%EC%A0%9C%20%ED%92%80%EC%9D%B4)
-
-<br/>
-
-<br/>
-
-
 
 
 
