@@ -33,6 +33,7 @@
 **챗봇 만들기**
 
 - [파이썬 챗봇](https://github.com/kim6394/gs_Algorithm/tree/master/Python/python-chatbot)
+- [파이썬을 활용한 슬랙 챗봇 프로젝트](https://github.com/kim6394/JMT_SlackBot)
 
 <br/>
 
