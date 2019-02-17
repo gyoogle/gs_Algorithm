@@ -1,23 +1,39 @@
 ### 알고리즘 스터디(Java)
+<<<<<<< HEAD
 
 ------
 
 - [링크](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm(Study))
 
 <br/>
+=======
+
+------
+>>>>>>> e945ba301fbc3e8470bc2868b765c95234f4a0ea
+
+- [링크](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm(Study))
 
 
-
+<<<<<<< HEAD
 ### 자바(java)
 
 ---
 
 - [문제 풀이](https://github.com/kim6394/gs_Algorithm/tree/master/Java)
 
+=======
+
+### 자바(java)
+
+---
+
+- [문제 풀이](https://github.com/kim6394/gs_Algorithm/tree/master/Java)
+>>>>>>> e945ba301fbc3e8470bc2868b765c95234f4a0ea
 
 
 <br/>
 
+<br/>
 
 
 ### 파이썬(Python)
@@ -35,6 +51,7 @@
 **챗봇 만들기**
 
 - [파이썬 챗봇](https://github.com/kim6394/gs_Algorithm/tree/master/Python/python-chatbot)
+- [파이썬을 활용한 슬랙 챗봇 프로젝트](https://github.com/kim6394/JMT_SlackBot)
 
 <br/>
 
