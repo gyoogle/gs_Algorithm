@@ -30,7 +30,7 @@
 
 ---
 
-- 어댑터(Adapter) 패턴
+- [어댑터(Adapter) 패턴](https://github.com/kim6394/gs_Algorithm/tree/master/Java/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4/%EC%96%B4%EB%8C%91%ED%84%B0%ED%8C%A8%ED%84%B4)
 - 프로토 타입(Prototype) 패턴
 - 싱글톤(Singleton) 패턴
 - 컴포지트(Composite) 패턴
