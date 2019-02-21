@@ -1,0 +1,89 @@
+<!-- Lotto 웹페이지 만들기 -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+
+div {
+	width: 600px;
+    height: 350px;
+    background-color: skyblue;
+	text-align: center;
+	vertical-align: middle;
+	line-height:330px;
+}
+
+.cen {
+	display:inline-block;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+	font-weight:bold;
+	line-height:50px;
+	border-radius:50%;
+	color: black;
+	background-color: yellow;
+	margin: 0 10px;
+}
+
+</style>
+
+<script type="text/javascript">
+	function Lotto() {
+		console.log("시작!");
+	    var lotto = new Array(6);
+	    var count = 0;
+	    var overlap = true; // 중복 체크
+	
+	    while (count < 6) {
+	        var number = 0; 
+	        number = parseInt(Math.random() * 45) + 1;
+	
+	        for (var i = 0; i < count; i++) { 
+	            if (lotto[i] == number) {
+	            	overlap = false;
+	            }
+	        }
+	
+	        if (overlap) {
+	            lotto[count] = number; 
+	            count++;
+	        }
+	
+	        overlap = true; 
+	    }
+	    
+	    var display = document.getElementById("display");
+	    
+	    var i = 0;
+	    
+	    var it = setInterval(function() {
+		    var div = document.createElement("div");
+			if(i++ < 6){
+				var lot = document.createTextNode(lotto[i-1]);
+		    	
+		    	div.appendChild(lot);
+		    	div.setAttribute("class", "cen");
+		    	
+		    	display.appendChild(div);
+			} else {
+				//alert("완료!");
+				clearInterval(it);
+			}
+		}, 1000);
+	}
+	
+</script>
+
+</head>
+<body onload="Lotto()">
+	
+	<h2>대박을 기원합니다~~</h2>
+	<div id="display">
+	
+	</div>
+
+</body>
+</html>
