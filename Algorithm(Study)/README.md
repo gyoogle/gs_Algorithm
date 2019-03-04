@@ -50,10 +50,10 @@
 >
 > - 동기와 비동기의 차이
 > - 프로세스 동기화
+> - Critical Section
 >
 > **[5주차(스케줄러2) - 3/18(월)]**
 >
-> - Critical Section
 > - 해결책
 > - Lock
 > - Semaphores
