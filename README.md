@@ -27,6 +27,7 @@
 
 ---
 
+- [디자인 패턴 정리](https://github.com/kim6394/gs_Algorithm/tree/master/Java/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4)
 - [문제 풀이](https://github.com/kim6394/gs_Algorithm/tree/master/Java)
 >>>>>>> e945ba301fbc3e8470bc2868b765c95234f4a0ea
 

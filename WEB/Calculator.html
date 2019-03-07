@@ -1,0 +1,107 @@
+<!-- 자바스크립트 계산기 만들기 -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	#display {
+		width: 180px;
+		height: 250px;
+		border: 2px solid red;
+		overflow: auto; /*div안의 내용물이 넘치면 스크롤바가 자동으로 내려가도록*/
+	}
+	
+	#display2 {
+		width: 180px;
+		height: 150px;
+		border: 0px solid white;
+		overflow: auto; /*div안의 내용물이 넘치면 스크롤바가 자동으로 내려가도록*/
+	}
+	
+	fieldset {
+		width: 180px;
+		height: 400px;
+	}
+	p {
+		height: 30px;
+	}
+	#calc input[type=button]{
+		text-align = center;
+		width: 40px;
+		height: 40px;
+		border: thin 1px;'
+		border-color: gainsboro;
+	}
+	#calc input[type=text]{
+		text-align: end;
+	}
+</style>
+<script type="text/javascript">
+
+	var cnt = 1;
+	
+	function cal(num) {
+		myform.win.value += num;
+	}
+	
+	function answer() {
+		var div = document.getElementById('display2');
+		try {
+			var br = document.createElement("br");
+			var count = document.createTextNode(cnt++ + ". ");
+			var txt = document.createTextNode(document.myform.win.value + "=");
+			var result = document.createTextNode(eval(document.myform.win.value));
+			div.appendChild(count);
+			div.appendChild(txt);
+			div.appendChild(result);
+			div.appendChild(br);
+			myform.win.value = eval(document.myform.win.value);
+		} catch(e) {
+			alert('오류!');
+		}
+	}
+	
+	function clear_cal() {
+		myform.win.value = "";
+	}
+</script>
+</head>
+<body>
+	<form name="myform" id="calc">
+		<fieldset>
+			<div id="display">
+				<p><input type="text" id="win" size="20" placeholder="0.0"></p>
+				<p>
+					<input type="button" value="7" onclick="cal('7')">
+					<input type="button" value="8" onclick="cal('8')">
+					<input type="button" value="9" onclick="cal('9')">
+					<input type="button" value="+" onclick="cal('+')">
+				</p>
+				<p>
+					<input type="button" value="4" onclick="cal('4')">
+					<input type="button" value="5" onclick="cal('5')">
+					<input type="button" value="6" onclick="cal('6')">
+					<input type="button" value="-" onclick="cal('-')">
+				</p>
+				<p>
+					<input type="button" value="1" onclick="cal('1')">
+					<input type="button" value="2" onclick="cal('2')">
+					<input type="button" value="3" onclick="cal('3')">
+					<input type="button" value="*" onclick="cal('*')">
+				</p>
+				<p>
+					<input type="button" value="0" onclick="cal('1')">
+					<input type="button" value="CE" onclick="clear_cal()">
+					<input type="button" value="=" onclick="answer()">
+					<input type="button" value="/" onclick="cal('/')">
+				</p>
+			</div>
+			<div id="display2">
+				<h2>결 과 이 력</h2>
+				
+			</div>
+		</fieldset>
+	</form>
+</body>
+</html>
