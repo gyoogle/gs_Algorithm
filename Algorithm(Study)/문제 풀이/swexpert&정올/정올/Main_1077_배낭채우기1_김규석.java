@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class Main_1077_πË≥∂√§øÏ±‚1_±Ë±‘ºÆ {
+public class Main_1077_Î∞∞ÎÇ≠Ï±ÑÏö∞Í∏∞1_ÍπÄÍ∑úÏÑù {
 	
 	static class J{
 		int c;
@@ -30,7 +30,6 @@ public class Main_1077_πË≥∂√§øÏ±‚1_±Ë±‘ºÆ {
 		
 		arr = new ArrayList<>();
 		dp = new int[W+1];
-		int[] idx = new int[N+1];
 		
 		for (int i = 1; i < N+1; i++) {
 			st = new StringTokenizer(br.readLine(), " ");
@@ -39,11 +38,10 @@ public class Main_1077_πË≥∂√§øÏ±‚1_±Ë±‘ºÆ {
 			int c = Integer.parseInt(st.nextToken());
 			
 			arr.add(new J(s,c));
-			idx[i] = s;
 		}
 		
-		for (int z = 1; z < idx.length; z++) {
-			int q = idx[z];
+		for (int z = 1; z < arr.size()-1; z++) {
+			int q = arr.get(z-1).c;
 			int n = 1;
 			for (int j = q; j < dp.length; j+=q) {
 				if(dp[j] == 0)
@@ -56,8 +54,8 @@ public class Main_1077_πË≥∂√§øÏ±‚1_±Ë±‘ºÆ {
 		
 		for (int i = 1; i < dp.length; i++) {
 			
-			for (int j = 1; j < idx.length; j++) {
-				int q = idx[j];
+			for (int j = 1; j < arr.size()-1; j++) {
+				int q = arr.get(j-1).c;
 				if(i > q) {
 					int val = arr.get(j-1).v;
 					if(dp[i] < val + dp[i-q])
