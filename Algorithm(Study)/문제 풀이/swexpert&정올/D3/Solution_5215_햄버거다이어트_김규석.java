@@ -1,22 +1,10 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Solution_5215_ÇÜ¹ö°Å´ÙÀÌ¾îÆ®_±è±Ô¼® {
+public class Solution_5215_í–„ë²„ê±°ë‹¤ì´ì–´íŠ¸_ê¹€ê·œì„ {
 
-	static class ham {
-		int score;
-		int cal;
-		
-		ham(int score, int cal){
-			this.score = score;
-			this.cal = cal;
-		}
-	}
 	static int N,L;
-	static ArrayList<ham> arr;
 	static int[] dp;
 	
 	public static void main(String[] args) throws Exception {
@@ -31,7 +19,6 @@ public class Solution_5215_ÇÜ¹ö°Å´ÙÀÌ¾îÆ®_±è±Ô¼® {
 			N = Integer.parseInt(st.nextToken());
 			L = Integer.parseInt(st.nextToken());
 			
-			arr = new ArrayList<>();
 			dp = new int[L+1];
 			
 			for (int i = 0; i < N; i++) {
@@ -39,8 +26,6 @@ public class Solution_5215_ÇÜ¹ö°Å´ÙÀÌ¾îÆ®_±è±Ô¼® {
 				
 				int score = Integer.parseInt(st.nextToken());
 				int calory = Integer.parseInt(st.nextToken());
-				
-				arr.add(new ham(score, calory));
 				
 				sol(score, calory);
 			}
