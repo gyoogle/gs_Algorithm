@@ -1,4 +1,4 @@
-### 데이터베이스
+### 데이터베이스(04.10)
 
 ---
 
@@ -940,3 +940,253 @@ where dept.locid in (select loc.locid
 ```
 
 
+
+### 데이터베이스(4.12)
+
+---
+
+
+
+1. data만 지울 때 (commit, rollback)
+
+   > `delete from emp;`
+
+2. table을 삭제
+
+   > `drop table emp;`
+
+3. data 삭제 (table은 남아있음)
+
+   > `truncate table emp;` : rollback 불가능해서 잘 안씀
+
+
+
+##### 테이블 copy
+
+```
+-- table 생성(copy)
+create table emp2
+(select * from emp); -- sub query
+
+-- 부서번호가 30,40,50인 곳만 복사하기
+create table emp3
+(select * from emp where deptid in (30,40,50));
+```
+
+- 테이블 copy는 **키는 복사 되지않음**. null 값은 복사
+
+
+
+##### SELF JOIN 연습
+
+```
+-- 자신의 매니저 salary가 15000이상인 직원의 id, name, 매니저 name, 매니저 salary
+
+select e1.empid, e1.fname, e2.fname '매니저 이름', e2.salary '매니저 연봉'
+from emp e1, emp e2
+where e1.mgrid = e2.empid
+and e2.salary >= 15000
+order by e2.salary desc;
+```
+
+
+
+##### OUTER JOIN 연습
+
+```
+-- outer join 
+select e.empid, e.fname, e.deptid, d.deptname, j.jobtitle
+from emp e left join dept d-- left에 있는 데이터가 null이라고 하더라도 다 나와야함
+on e.deptid = d.deptid
+left join job j
+on e.jobid = j.jobid;
+
+-- outer join
+select e.empid, e.fname, d.deptname, l.city
+from emp e left outer join dept d
+on e.deptid = d.deptid
+left outer join loc l
+on d.locid = l.locid;
+```
+
+더 큰쪽을 기준으로 앞에 쓰고 left join하자
+
+
+
+#### Sub Query의 종류
+
+1. 단일 행
+2. 복수 행
+3. 복수 컬럼
+4. 상호관련
+
+```
+-- 미국에 위치한 부서 이름
+select dept.DEPTID, dept.DEPTNAME
+from dept
+where dept.locid in (select loc.locid 
+			from loc
+			where loc.countryid = 'US');
+			
+			
+-- 60번 부서 직원들 연봉 모두와 비교해서 큰 사원의 정보 (empid, deptid, salary)
+SELECT 
+    empid, deptid, salary
+FROM
+    emp
+WHERE
+    salary > all (SELECT 
+            salary
+        FROM
+            emp
+        WHERE
+            deptid = 60);
+            
+SELECT 
+    empid, deptid, salary
+FROM
+    emp
+WHERE
+    salary > (SELECT 
+            max(salary)
+        FROM
+            emp
+        WHERE
+            deptid = 60);
+```
+
+
+
+##### update
+
+```
+-- update:
+update emp
+set deptid = 40,
+jobid = 'IT_PROG'
+where empid = 111;
+
+-- 사번이 128인 사원의 연봉으로 사번이 129번 사원 연봉을 수정
+update emp
+set salary = (select salary from(select salary from emp where empid = 128)x) -- x는 별칭
+where empid = 129;
+```
+
+
+
+
+
+```
+-- 부서별 최소 연봉을 받는 사람의 사번, 이름, 연봉 ( select empid, fname, salary )
+select empid, fname, salary, deptid
+from emp
+where (salary, deptid) in (select min(salary), deptid from emp group by deptid);
+
+----
+SELECT 
+    empid, deptid, fname, salary
+FROM
+    emp
+WHERE
+    (deptid , salary) IN (SELECT 
+            deptid, MIN(salary)
+        FROM
+            emp
+        WHERE
+            deptid IS NOT NULL
+        GROUP BY deptid)
+ORDER BY deptid;
+```
+
+
+
+##### starwars 정답
+
+```
+-- 1. 전 스타워즈 시리즈의 상영년도, 영화제목, 배역, 출연배우 이름
+ SELECT b.openyear, b.episodename,c.charactername, a.realname  
+ FROM casting a,
+       starwars b,
+       characters c
+ WHERE a.characterid = c.characterid
+ AND a.episodeid   = b.episodeid
+ ORDER by b.openyear, a.characterid;
+
+-- 2. 에피소드 4에 출연한 배우는 모두 몇 명인지 구하는 쿼리
+SELECT COUNT(*) 
+ FROM casting   
+ WHERE episodeid = 4;
+
+-- 3. 각 배우 별 출연횟수를 조회하는 쿼리
+SELECT a.realname, count(*) cnt
+  FROM casting a,
+       starwars b,
+       characters c
+ WHERE a.characterid = c.characterid
+ AND a.episodeid   = b.episodeid
+ GROUP BY a.realname
+ ORDER BY cnt DESC;
+ 
+-- 4. 에피소드 별 이름과 출연자 수
+SELECT b.episodename, count(*)
+  FROM casting a,
+       starwars b     
+ WHERE a.episodeid   = b.episodeid
+ GROUP BY b.episodename;
+
+
+-- 5.가장 많은 인원이 출연한 에피소드 id . 
+
+select episodeid, count(*) cc
+from casting
+group by episodeid
+having cc >= all (select count(*) cnt 
+from casting 
+group by episodeid
+order by cnt desc);
+
+
+-- 6.제국의 역습에 등장하는 배우 이름
+select a.realname
+from casting a
+where a.episodeid = (
+	select episodeid
+	from starwars
+	where episodename like '제국%');
+
+-- 7. '아미달라 여왕'이 등장했던 에피소드 id와 배우명
+select episodeid, realname
+from casting
+where characterid =(
+		select characterid
+		from characters
+		where charactername like '아미%'); 
+    
+-- 8. 해리슨 포드가 등장했던 에피소드의 id와 에피소드 이름
+select episodeid,episodename
+from starwars
+where episodeid in (
+select episodeid
+from casting
+where realname like '해리슨%');
+-- 
+```
+
+
+
+view는 시스템이 내려가거나 refresh 되면 사라짐
+
+
+
+인덱스 종류
+
+- 싱글 인덱스
+
+  > ```
+  > create index i_emp_dept on emp(deptid);
+  > create unique index i_emp_email on emp(email);
+  > ```
+
+  
+
+- 복합 인덱스
