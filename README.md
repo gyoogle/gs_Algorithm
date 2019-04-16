@@ -2,8 +2,8 @@
 
 ------
 
-- [링크](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm(Study))
-
+- [스터디](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm(Study))
+- [InterView](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm(Study)/%EA%B0%9C%EB%85%90%20%EC%A0%95%EB%A6%AC/InterView)
 <br/>
 
 
