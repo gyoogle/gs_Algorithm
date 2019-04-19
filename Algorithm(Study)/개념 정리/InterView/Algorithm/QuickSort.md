@@ -39,7 +39,7 @@ public int partition(int[] array, int left, int right) {
     int i = left, j = right;
     
     while(i < j) {
-        while(pivot < array[i]) {
+        while(pivot < array[j]) {
             j--;
         }
         while(i<j && pivot >= array[i]){
