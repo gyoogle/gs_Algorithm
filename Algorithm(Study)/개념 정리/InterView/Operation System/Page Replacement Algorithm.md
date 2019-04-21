@@ -47,7 +47,7 @@
 
    
 
-   ![1](C:\Users\김규철\Desktop\1.PNG)
+   <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FVQCGK%2FbtquJuqRkyS%2FLb3NgwHkBve08YhZpLkq31%2Fimg.png">
 
 <br>
 
@@ -61,7 +61,7 @@
 
    하지만, 실질적으로 페이지가 앞으로 잘 사용되지 않을 것이라는 보장이 없기 때문에 수행하기 어려운 알고리즘임
 
-   ![2](C:\Users\김규철\Desktop\2.PNG)
+   <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FSvRs7%2FbtquHbeJLQX%2FWXmK7xdGUbIxl43t0JG6Qk%2Fimg.png">
 
 <br>
 
@@ -77,7 +77,7 @@
 
    OPT보다는 페이지 결함이 더 일어날 수 있지만, **실제로 사용할 수 있는 페이지 교체 알고리즘에서는 가장 좋은 방법 중 하나임**
 
-   ![3](C:\Users\김규철\Desktop\3.PNG)
+   <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FnCgc3%2FbtquGW9VUrm%2FxTKnVKPOVQuSXmAuRehSw1%2Fimg.png">
 
 
 
