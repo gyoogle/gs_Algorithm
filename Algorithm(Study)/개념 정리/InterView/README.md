@@ -13,6 +13,8 @@
 - [프로세스 vs 스레드](https://github.com/kim6394/gs_Algorithm/blob/master/Algorithm(Study)/%EA%B0%9C%EB%85%90%20%EC%A0%95%EB%A6%AC/InterView/Operation%20System/Process%20vs%20Thread.md)
 - [데드락](https://github.com/kim6394/gs_Algorithm/blob/master/Algorithm(Study)/%EA%B0%9C%EB%85%90%20%EC%A0%95%EB%A6%AC/InterView/Operation%20System/DeadLock.md)
 - [페이징 & 세그먼테이션](https://github.com/kim6394/gs_Algorithm/blob/master/Algorithm(Study)/%EA%B0%9C%EB%85%90%20%EC%A0%95%EB%A6%AC/InterView/Operation%20System/Paging%20and%20Segmentation.md) ([PDF](https://github.com/kim6394/gs_Algorithm/blob/master/Algorithm(Study)/%EA%B0%9C%EB%85%90%20%EC%A0%95%EB%A6%AC/InterView/Operation%20System/Paging%20and%20Segmentation.pdf))
+- [페이지 교체 알고리즘](https://github.com/kim6394/gs_Algorithm/blob/master/Algorithm(Study)/%EA%B0%9C%EB%85%90%20%EC%A0%95%EB%A6%AC/InterView/Operation%20System/Page%20Replacement%20Algorithm.md)
+
 
 ### Database
 - [트랜잭션](https://github.com/kim6394/gs_Algorithm/blob/master/Algorithm(Study)/%EA%B0%9C%EB%85%90%20%EC%A0%95%EB%A6%AC/InterView/Database/Transaction.md)
