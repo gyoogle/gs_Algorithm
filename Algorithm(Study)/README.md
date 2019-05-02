@@ -82,6 +82,19 @@
 <br>
 
 
+### 자료구조 시작
+
+- HashTable ( 1 )
+- Graph ( 2 )
+- Tree ( 3 )
+- Binary Heap ( 4 )
+- Red Black Tree ( 5 )
+- Array vs LinkedList ( 6 )
+- Stack & Queue ( 7 )
+
+<br>
+
+
 ##### 1월 14일(월) 과제
 
 - **알고리즘**
