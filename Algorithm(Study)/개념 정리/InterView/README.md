@@ -22,7 +22,7 @@
 
 ### Design Pattern
 - [어댑터 패턴](https://github.com/kim6394/gs_Algorithm/blob/master/Algorithm(Study)/%EA%B0%9C%EB%85%90%20%EC%A0%95%EB%A6%AC/InterView/Design%20Pattern/Adapter%20Pattern.md)
-
+- [싱글톤 패턴](https://github.com/kim6394/gs_Algorithm/blob/master/Algorithm(Study)/%EA%B0%9C%EB%85%90%20%EC%A0%95%EB%A6%AC/InterView/Design%20Pattern/Singleton%20Pattern.md)
 
 <br>
 <br>
