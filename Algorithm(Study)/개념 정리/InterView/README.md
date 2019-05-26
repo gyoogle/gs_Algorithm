@@ -1,6 +1,9 @@
 ## InterView 준비
 
 
+### Concept
+- [객체지향 프로그래밍](https://github.com/kim6394/gs_Algorithm/blob/master/Algorithm(Study)/%EA%B0%9C%EB%85%90%20%EC%A0%95%EB%A6%AC/InterView/Concept/Object-Oriented%20Programming.md)
+
 ### Algorithm
 - [퀵소트](https://github.com/kim6394/gs_Algorithm/blob/master/Algorithm(Study)/%EA%B0%9C%EB%85%90%20%EC%A0%95%EB%A6%AC/InterView/Algorithm/QuickSort.md)
 - [머지소트](https://github.com/kim6394/gs_Algorithm/blob/master/Algorithm(Study)/%EA%B0%9C%EB%85%90%20%EC%A0%95%EB%A6%AC/InterView/Algorithm/MergeSort.md)
