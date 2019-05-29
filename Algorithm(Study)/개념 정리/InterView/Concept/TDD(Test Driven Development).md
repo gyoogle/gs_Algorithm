@@ -1,7 +1,6 @@
 ## TDD(Test Driven Development)
 
 
-<br>
 ##### TDD : 테스트 주도 개발
 
 '테스트가 개발을 이끌어 나간다.'
@@ -39,8 +38,7 @@
 
 > 소프트웨어 또한 반복적인 테스트와 수정을 통해 고품질의 소프트웨어를 탄생시킬 수 있다.
 
-<br>
-<br>
+
 ##### 장점
 
 작업과 동시에 테스트를 진행하면서 실시간으로 오류 파악이 가능함 ( 시스템 결함 방지 )
@@ -51,8 +49,6 @@
 
 (자바는 JUnit, C와 C++은 CppUnit 등)
 
-<br>
-<br>
 ##### 단점
 
 기존 개발 프로세스에 테스트케이스 설계가 추가되므로 생산 비용 증가
@@ -191,6 +187,8 @@ public class SimpleScoreStrategy implements ScoreStrategy {
 
 통과가 가능한 정보를 넣고 실행하면, 아래와 같이 에러 없이 제대로 실행되는 모습을 볼 수 있다.
 <br>
+<br>
+
 ![img](https://mblogthumb-phinf.pstatic.net/MjAxNzA2MjhfMjQx/MDAxNDk4NjA2NjM0MzIw.LGPVpvam5De7ibWipMqiGHZPjRcKWQKYhLbKgnL6i78g.8vplllDO1pfKFs5Wua9ZLl7b6g6kHbjG-6M--HmDRCwg.PNG.suresofttech/image.png?type=w800)
 
 <br>
