@@ -23,7 +23,7 @@
 ---
 
 - [기본 개념 정리](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm(Study)/%EA%B0%9C%EB%85%90%20%EC%A0%95%EB%A6%AC/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8)
-- [심화 내용 정리 - ](https://github.com/kim6394/gs_Algorithm/blob/master/Algorithm(Study)/%EA%B0%9C%EB%85%90%20%EC%A0%95%EB%A6%AC/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/Javascript%20%EC%8B%AC%ED%99%94.md)
+- [심화 내용 정리(ES2015)](https://github.com/kim6394/gs_Algorithm/blob/master/Algorithm(Study)/%EA%B0%9C%EB%85%90%20%EC%A0%95%EB%A6%AC/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/Javascript%20%EC%8B%AC%ED%99%94.md)
 <br/>
 
 ### 파이썬(Python)
