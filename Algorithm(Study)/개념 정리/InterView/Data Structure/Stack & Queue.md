@@ -291,7 +291,7 @@ public void enQueue(Object o) {
         return;
     }
     
-    queue[rear++] = o;
+    queue[++rear] = o;
 }
 ```
 
