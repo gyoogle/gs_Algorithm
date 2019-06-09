@@ -4,8 +4,7 @@
 
 - [스터디](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm(Study))
 - [문제풀이(백준,expert)](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm(Study)/%EB%AC%B8%EC%A0%9C%20%ED%92%80%EC%9D%B4)
-- [InterView](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm(Study)/%EA%B0%9C%EB%85%90%20%EC%A0%95%EB%A6%AC/InterView)
-<br/>
+  <br/>
 
 
 
