@@ -3,10 +3,12 @@
 ------
 
 - [스터디](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm(Study))
-- [문제풀이(백준,expert)](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm(Study)/%EB%AC%B8%EC%A0%9C%20%ED%92%80%EC%9D%B4)
-  <br/>
+- [문제풀이](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm(Study)/%EB%AC%B8%EC%A0%9C%20%ED%92%80%EC%9D%B4)
+  - [백준(BOJ)](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm(Study)/%EB%AC%B8%EC%A0%9C%20%ED%92%80%EC%9D%B4/%EB%B0%B1%EC%A4%80)
+  - [SWEA / 정올](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm(Study)/%EB%AC%B8%EC%A0%9C%20%ED%92%80%EC%9D%B4/swexpert%26%EC%A0%95%EC%98%AC)
+  - [CodeForces](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm(Study)/%EB%AC%B8%EC%A0%9C%20%ED%92%80%EC%9D%B4/CodeForces)
 
-
+<br/>
 
 ### 자바(java)
 
