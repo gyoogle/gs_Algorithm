@@ -1,14 +1,22 @@
+### 알고리즘 문제풀이
+
+---
+
+- [문제풀이](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm(Study)/%EB%AC%B8%EC%A0%9C%20%ED%92%80%EC%9D%B4)
+  - [백준(BOJ)](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm(Study)/%EB%AC%B8%EC%A0%9C%20%ED%92%80%EC%9D%B4/%EB%B0%B1%EC%A4%80)
+  - [프로그래머스](<https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm(Study)/%EB%AC%B8%EC%A0%9C%20%ED%92%80%EC%9D%B4/Programmers>)
+  - [SWEA / 정올](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm(Study)/%EB%AC%B8%EC%A0%9C%20%ED%92%80%EC%9D%B4/swexpert%26%EC%A0%95%EC%98%AC)
+  - [CodeForces](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm(Study)/%EB%AC%B8%EC%A0%9C%20%ED%92%80%EC%9D%B4/CodeForces)
+
+<br/>
+
 ### 스터디
 
 ------
 
 - [스터디](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm(Study))
-- [문제풀이](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm(Study)/%EB%AC%B8%EC%A0%9C%20%ED%92%80%EC%9D%B4)
-  - [백준(BOJ)](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm(Study)/%EB%AC%B8%EC%A0%9C%20%ED%92%80%EC%9D%B4/%EB%B0%B1%EC%A4%80)
-  - [SWEA / 정올](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm(Study)/%EB%AC%B8%EC%A0%9C%20%ED%92%80%EC%9D%B4/swexpert%26%EC%A0%95%EC%98%AC)
-  - [CodeForces](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm(Study)/%EB%AC%B8%EC%A0%9C%20%ED%92%80%EC%9D%B4/CodeForces)
 
-<br/>
+<br>
 
 ### 자바(java)
 
@@ -25,6 +33,7 @@
 
 - [기본 개념 정리](https://github.com/kim6394/gs_Algorithm/tree/master/Algorithm(Study)/%EA%B0%9C%EB%85%90%20%EC%A0%95%EB%A6%AC/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8)
 - [심화 내용 정리(ES2015)](https://github.com/kim6394/gs_Algorithm/blob/master/Algorithm(Study)/%EA%B0%9C%EB%85%90%20%EC%A0%95%EB%A6%AC/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/Javascript%20%EC%8B%AC%ED%99%94.md)
+
 <br/>
 
 ### 파이썬(Python)
